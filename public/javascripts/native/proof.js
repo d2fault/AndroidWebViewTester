@@ -9,6 +9,9 @@ proof.getProofAccessToken = function (options, callback) {
 proof.closeWebView = function (options, callback) {
   proof.callNative("closeWebView", options, callback);
 };
+proof.onClickSharedButton = function (options, callback) {
+  proof.callNative("onClickSharedButton", options, callback);
+};
 
 /** 이 아래 코드는 무시해도 됩니다. **/
 proof.callNative = function (functionName, options, callback) {
